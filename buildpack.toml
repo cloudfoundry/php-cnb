@@ -44,6 +44,15 @@ stacks = ["org.cloudfoundry.stacks.cflinuxfs3","io.buildpacks.stacks.bionic"]
 uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.php-dist/org.cloudfoundry.php-dist-0.0.30-any-stack-a01348a7.tgz"
 version = "0.0.30"
 
+[[metadata.dependencies]]
+id = "org.cloudfoundry.php-web"
+sha256 = "1038545dad414d19155d059c124eac3b3f853657c3dcf77ad64b667484783a26"
+source = "https://github.com/cloudfoundry/php-web-cnb/archive/v0.0.23.tar.gz"
+source_sha256 = "5488dbfbb7432cd6f95e99d2384ff883e422a0c275dfed7c8dbdf933e8a34278"
+stacks = ["org.cloudfoundry.stacks.cflinuxfs3","io.buildpacks.stacks.bionic"]
+uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.php-web/org.cloudfoundry.php-web-0.0.23-any-stack-1038545d.tgz"
+version = "0.0.23"
+
 [[order]]
 
 [[order.group]]
@@ -62,7 +71,7 @@ version = "0.0.21"
 
 [[order.group]]
 id = "org.cloudfoundry.php-web"
-version = "0.0.24"
+version = "0.0.23"
 
 [[order]]
 
@@ -82,4 +91,4 @@ version = "0.0.25"
 
 [[order.group]]
 id = "org.cloudfoundry.php-web"
-version = "0.0.24"
+version = "0.0.23"
