@@ -17,6 +17,15 @@ stacks = ["org.cloudfoundry.stacks.cflinuxfs3","io.buildpacks.stacks.bionic"]
 uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.httpd/org.cloudfoundry.httpd-0.0.21-any-stack-970a11ec.tgz"
 version = "0.0.21"
 
+[[metadata.dependencies]]
+id = "org.cloudfoundry.nginx"
+sha256 = "ee1dd53157305181716793b2f3c088cd8a308fede0cfb6121dc9dfd19e5a51ff"
+source = "https://github.com/cloudfoundry/nginx-cnb/archive/v0.0.25.tar.gz"
+source_sha256 = "7077a2612072d905565dc0272d6928c675ec1362c5193a8adc4c085c1ff9102c"
+stacks = ["org.cloudfoundry.stacks.cflinuxfs3","io.buildpacks.stacks.bionic"]
+uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.nginx/org.cloudfoundry.nginx-0.0.25-any-stack-ee1dd531.tgz"
+version = "0.0.25"
+
 [[order]]
 
 [[order.group]]
