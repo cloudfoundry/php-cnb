@@ -1,0 +1,48 @@
+api = "0.2"
+
+[buildpack]
+id = "org.cloudfoundry.php"
+name = "PHP Buildpack"
+version = "{{.Version}}"
+
+[metadata]
+include_files = ["buildpack.toml"]
+
+[[order]]
+[[order.group]]
+id = "org.cloudfoundry.php-dist"
+version = "0.0.25"
+
+[[order.group]]
+id = "org.cloudfoundry.php-composer"
+optional = true
+version = "0.0.15"
+
+[[order.group]]
+id = "org.cloudfoundry.httpd"
+optional = true
+version = "0.0.25"
+
+[[order.group]]
+id = "org.cloudfoundry.php-web"
+version = "0.0.24"
+
+[[order]]
+[[order.group]]
+id = "org.cloudfoundry.php-dist"
+version = "0.0.25"
+
+[[order.group]]
+id = "org.cloudfoundry.php-composer"
+optional = true
+version = "0.0.15"
+
+[[order.group]]
+id = "org.cloudfoundry.nginx"
+optional = true
+version = "0.0.25"
+
+[[order.group]]
+id = "org.cloudfoundry.php-web"
+version = "0.0.24"
+
