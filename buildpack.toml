@@ -28,12 +28,12 @@ version = "0.0.35"
 
 [[metadata.dependencies]]
 id = "org.cloudfoundry.php-composer"
-sha256 = "5181d1f277ab9b8676f3745f58709815f7a77805532bfd80e5bcf241a964d38b"
-source = "https://github.com/cloudfoundry/php-composer-cnb/archive/v0.0.21.tar.gz"
-source_sha256 = "3d4d198362dfea8808dde5890a84b79454d84f6d2dada732512fa3cadd66d816"
+sha256 = "28b9a345d1860c109fcc885ad8906d0d92a9946a40781f488db5f7810ac19b57"
+source = "https://github.com/cloudfoundry/php-composer-cnb/archive/v0.0.22.tar.gz"
+source_sha256 = "18457b31d62887e0c099d8db0ce2d16229b993ff6b65caecc746e90d5aa78420"
 stacks = ["org.cloudfoundry.stacks.cflinuxfs3","io.buildpacks.stacks.bionic","org.cloudfoundry.stacks.tiny"]
-uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.php-composer/org.cloudfoundry.php-composer-0.0.21-any-stack-5181d1f2.tgz"
-version = "0.0.21"
+uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.php-composer/org.cloudfoundry.php-composer-0.0.22-any-stack-28b9a345.tgz"
+version = "0.0.22"
 
 [[metadata.dependencies]]
 id = "org.cloudfoundry.php-dist"
@@ -62,7 +62,7 @@ version = "0.0.40"
 [[order.group]]
 id = "org.cloudfoundry.php-composer"
 optional = true
-version = "0.0.21"
+version = "0.0.22"
 
 [[order.group]]
 id = "org.cloudfoundry.httpd"
@@ -82,7 +82,7 @@ version = "0.0.40"
 [[order.group]]
 id = "org.cloudfoundry.php-composer"
 optional = true
-version = "0.0.21"
+version = "0.0.22"
 
 [[order.group]]
 id = "org.cloudfoundry.nginx"
