@@ -46,12 +46,12 @@ version = "0.0.47"
 
 [[metadata.dependencies]]
 id = "org.cloudfoundry.php-web"
-sha256 = "90faec1ab28e49201b74fbd41d8c8ce524e06cc72d67baf9490a52217e666f7f"
-source = "https://github.com/cloudfoundry/php-web-cnb/archive/v0.0.45.tar.gz"
-source_sha256 = "b201772b74688368766de7df3778d606898f929173c6e9bea182ec755124f40a"
+sha256 = "c5242449820819f68d5ad199f804d01e86172415d7dba47d6e5f4889792b7613"
+source = "https://github.com/cloudfoundry/php-web-cnb/archive/v0.0.46.tar.gz"
+source_sha256 = "1b20934708885fe59d0a1cb6531a334aa7356bdd5f3ea22e751288fc47ae9b90"
 stacks = ["org.cloudfoundry.stacks.tiny","io.buildpacks.stacks.bionic","org.cloudfoundry.stacks.cflinuxfs3"]
-uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.php-web/org.cloudfoundry.php-web-0.0.45-any-stack-90faec1a.tgz"
-version = "0.0.45"
+uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.php-web/org.cloudfoundry.php-web-0.0.46-any-stack-c5242449.tgz"
+version = "0.0.46"
 
 [[order]]
 
@@ -71,7 +71,7 @@ version = "0.0.42"
 
 [[order.group]]
 id = "org.cloudfoundry.php-web"
-version = "0.0.45"
+version = "0.0.46"
 
 [[order]]
 
@@ -91,4 +91,4 @@ version = "0.0.46"
 
 [[order.group]]
 id = "org.cloudfoundry.php-web"
-version = "0.0.45"
+version = "0.0.46"
