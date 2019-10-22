@@ -1,0 +1,160 @@
+api = "0.2"
+
+[buildpack]
+id = "org.cloudfoundry.php-shim"
+name = "PHP Shim Buildpack"
+version = "{{.Version}}"
+
+[metadata]
+include_files = ["buildpack.toml"]
+
+[[metadata.dependencies]]
+id = "lifecycle"
+version = "0.4.0"
+uri = "https://buildpacks.cloudfoundry.org/dependencies/lifecycle/lifecycle-0.4.0-any-stack-fa6792ea.tgz"
+sha256 = "fa6792ea8c9e7fcad25d76f0bbdf6e494ffdab5e0eaaec4ba1d5fff40a9c600f"
+source = "https://github.com/buildpack/lifecycle/releases/download/v0.4.0/lifecycle-v0.4.0%2Blinux.x86-64.tgz"
+source_sha256 = "fa6792ea8c9e7fcad25d76f0bbdf6e494ffdab5e0eaaec4ba1d5fff40a9c600f"
+stacks = ["org.cloudfoundry.stacks.cflinuxfs3","org.cloudfoundry.stacks.cflinuxfs2"]
+
+[[metadata.dependencies]]
+id = "org.cloudfoundry.php-compat"
+uri = "https://github.com/cloudfoundry/php-compat-cnb/releases/download/v0.0.1/php-compat-cnb-0.0.1.tgz"
+sha256 = "ab32025a0608e82663297075c5abb0d7593117f84c14e3c5064220ab3f81ab04"
+source = "https://github.com/cloudfoundry/php-compat-cnb/archive/v0.0.1.tar.gz"
+source_sha256 = "99c815e723f90f72419aebaf5183d87dabf6c1be5f92043f5f009a87b3ac5f38"
+stacks = ["org.cloudfoundry.stacks.cflinuxfs3"]
+version = "0.0.1"
+
+[[metadata.dependencies]]
+id = "org.cloudfoundry.httpd"
+sha256 = "6eee1c83cdc62c50d562b7f93cd3f57498f6b8579765d1f7867637709b8274fe"
+source = "https://github.com/cloudfoundry/httpd-cnb/archive/v0.0.45.tar.gz"
+source_sha256 = "e3d2b048d3f164f95ea07b29a5b155eb5aed92eae4606c1b0d4f5bcf6656d71f"
+stacks = ["org.cloudfoundry.stacks.tiny","io.buildpacks.stacks.bionic","org.cloudfoundry.stacks.cflinuxfs3"]
+uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.httpd/org.cloudfoundry.httpd-0.0.45-any-stack-6eee1c83.tgz"
+version = "0.0.45"
+
+[[metadata.dependencies]]
+id = "org.cloudfoundry.nginx"
+sha256 = "1f084f66a32a288370f180d0553d9e29cd8ff9ba596f68a2d755bbdd86aba790"
+source = "https://github.com/cloudfoundry/nginx-cnb/archive/v0.0.48.tar.gz"
+source_sha256 = "c1b621f38635ceb71b1c54e6d05f5d170a7cd4946845430da3b4206b2ad626c9"
+stacks = ["org.cloudfoundry.stacks.tiny","io.buildpacks.stacks.bionic","org.cloudfoundry.stacks.cflinuxfs3"]
+uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.nginx/org.cloudfoundry.nginx-0.0.48-any-stack-1f084f66.tgz"
+version = "0.0.48"
+
+[[metadata.dependencies]]
+id = "org.cloudfoundry.php-composer"
+sha256 = "3aaaee9ad79d322322570767df11034a4d0aea40fe736f0d63cee99add5f9edb"
+source = "https://github.com/cloudfoundry/php-composer-cnb/archive/v0.0.28.tar.gz"
+source_sha256 = "7aaf997c255d0e4e8b893f02f690012dfef6f299c27de7b5800d61a0f456784f"
+stacks = ["org.cloudfoundry.stacks.tiny","io.buildpacks.stacks.bionic","org.cloudfoundry.stacks.cflinuxfs3"]
+uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.php-composer/org.cloudfoundry.php-composer-0.0.28-any-stack-3aaaee9a.tgz"
+version = "0.0.28"
+
+[[metadata.dependencies]]
+id = "org.cloudfoundry.php-dist"
+sha256 = "5f4fa7d61fdcd505d2b0dc461499b48a59724f71e1932cb368ce5e387eabb1b8"
+source = "https://github.com/cloudfoundry/php-dist-cnb/archive/v0.0.49.tar.gz"
+source_sha256 = "a7f9bd1b1e8c5d76ef1153388b579f6831d2b65d65f834e78d3d7c2e8f78e532"
+stacks = ["org.cloudfoundry.stacks.tiny","io.buildpacks.stacks.bionic","org.cloudfoundry.stacks.cflinuxfs3"]
+uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.php-dist/org.cloudfoundry.php-dist-0.0.49-any-stack-5f4fa7d6.tgz"
+version = "0.0.49"
+
+[[metadata.dependencies]]
+id = "org.cloudfoundry.php-web"
+sha256 = "867f462db059d027bad065466843b52f2d34f7af83de54c6c0d3ec300ec5260b"
+source = "https://github.com/cloudfoundry/php-web-cnb/archive/v0.0.47.tar.gz"
+source_sha256 = "cbd5185072c5d004fa2cea3c7f9ddd93f056b695444c0ad5952923f94bfb514a"
+stacks = ["org.cloudfoundry.stacks.tiny","io.buildpacks.stacks.bionic","org.cloudfoundry.stacks.cflinuxfs3"]
+uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.php-web/org.cloudfoundry.php-web-0.0.47-any-stack-867f462d.tgz"
+version = "0.0.47"
+
+[[order]]
+
+[[order.group]]
+id = "org.cloudfoundry.php-dist"
+version = "0.0.49"
+
+[[order.group]]
+id = "org.cloudfoundry.php-composer"
+optional = true
+version = "0.0.28"
+
+[[order.group]]
+id = "org.cloudfoundry.httpd"
+optional = true
+version = "0.0.45"
+
+[[order.group]]
+id = "org.cloudfoundry.php-web"
+version = "0.0.47"
+
+[[order]]
+
+[[order.group]]
+id = "org.cloudfoundry.php-dist"
+version = "0.0.49"
+
+[[order.group]]
+id = "org.cloudfoundry.php-composer"
+optional = true
+version = "0.0.28"
+
+[[order.group]]
+id = "org.cloudfoundry.nginx"
+optional = true
+version = "0.0.48"
+
+[[order.group]]
+id = "org.cloudfoundry.php-web"
+version = "0.0.47"
+
+[[order]]
+
+[[order.group]]
+id = "org.cloudfoundry.httpd"
+optional = true
+version = "0.0.45"
+
+[[order.group]]
+id = "org.cloudfoundry.php-compat"
+version = "0.0.1"
+
+[[order.group]]
+id = "org.cloudfoundry.php-dist"
+version = "0.0.49"
+
+[[order.group]]
+id = "org.cloudfoundry.php-composer"
+optional = true
+version = "0.0.28"
+
+[[order.group]]
+id = "org.cloudfoundry.php-web"
+version = "0.0.47"
+
+[[order]]
+
+[[order.group]]
+id = "org.cloudfoundry.nginx"
+optional = true
+version = "0.0.48"
+
+[[order.group]]
+id = "org.cloudfoundry.php-compat"
+version = "0.0.1"
+
+[[order.group]]
+id = "org.cloudfoundry.php-dist"
+version = "0.0.49"
+
+[[order.group]]
+id = "org.cloudfoundry.php-composer"
+optional = true
+version = "0.0.28"
+
+[[order.group]]
+id = "org.cloudfoundry.php-web"
+version = "0.0.47"
