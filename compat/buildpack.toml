@@ -1,7 +1,7 @@
 api = "0.2"
 
 [buildpack]
-id = "org.cloudfoundry.php-shim"
+id = "org.cloudfoundry.shim.php"
 name = "PHP Shim Buildpack"
 version = "{{.Version}}"
 
@@ -10,21 +10,21 @@ include_files = ["buildpack.toml"]
 
 [[metadata.dependencies]]
 id = "lifecycle"
-version = "0.4.0"
-uri = "https://buildpacks.cloudfoundry.org/dependencies/lifecycle/lifecycle-0.4.0-any-stack-fa6792ea.tgz"
-sha256 = "fa6792ea8c9e7fcad25d76f0bbdf6e494ffdab5e0eaaec4ba1d5fff40a9c600f"
-source = "https://github.com/buildpack/lifecycle/releases/download/v0.4.0/lifecycle-v0.4.0%2Blinux.x86-64.tgz"
-source_sha256 = "fa6792ea8c9e7fcad25d76f0bbdf6e494ffdab5e0eaaec4ba1d5fff40a9c600f"
-stacks = ["org.cloudfoundry.stacks.cflinuxfs3","org.cloudfoundry.stacks.cflinuxfs2"]
+sha256 = "fe37503098e964aa1a052abb50fecf2de3624c0049506e638c86dc5b4b7909e8"
+source = "https://github.com/buildpack/lifecycle/releases/download/v0.5.0/lifecycle-v0.5.0%2Blinux.x86-64.tgz"
+source_sha256 = "fe37503098e964aa1a052abb50fecf2de3624c0049506e638c86dc5b4b7909e8"
+stacks = ["org.cloudfoundry.stacks.tiny","io.buildpacks.stacks.bionic","org.cloudfoundry.stacks.cflinuxfs3"]
+uri = "https://buildpacks.cloudfoundry.org/dependencies/lifecycle/lifecycle-0.5.0-any-stack-fe375030.tgz"
+version = "0.5.0"
 
 [[metadata.dependencies]]
 id = "org.cloudfoundry.php-compat"
-uri = "https://github.com/cloudfoundry/php-compat-cnb/releases/download/v0.0.1/php-compat-cnb-0.0.1.tgz"
-sha256 = "ab32025a0608e82663297075c5abb0d7593117f84c14e3c5064220ab3f81ab04"
-source = "https://github.com/cloudfoundry/php-compat-cnb/archive/v0.0.1.tar.gz"
-source_sha256 = "99c815e723f90f72419aebaf5183d87dabf6c1be5f92043f5f009a87b3ac5f38"
+uri = "https://github.com/cloudfoundry/php-compat-cnb/releases/download/v0.0.3/php-compat-cnb-0.0.3.tgz"
+sha256 = "a9e8c7d0e8319d9e2acbf2f8133405601ad94a51aaa2d757a57b11ec3d4d6747"
+source = "https://github.com/cloudfoundry/php-compat-cnb/archive/v0.0.3.tar.gz"
+source_sha256 = "e67049952d1420244f7c4ca225d76f3b061e5675db09706dbaaa2d393827fe69"
 stacks = ["org.cloudfoundry.stacks.cflinuxfs3"]
-version = "0.0.1"
+version = "0.0.3"
 
 [[metadata.dependencies]]
 id = "org.cloudfoundry.httpd"
@@ -74,53 +74,13 @@ version = "0.0.47"
 [[order]]
 
 [[order.group]]
-id = "org.cloudfoundry.php-dist"
-version = "0.0.49"
-
-[[order.group]]
-id = "org.cloudfoundry.php-composer"
-optional = true
-version = "0.0.28"
-
-[[order.group]]
-id = "org.cloudfoundry.httpd"
-optional = true
-version = "0.0.45"
-
-[[order.group]]
-id = "org.cloudfoundry.php-web"
-version = "0.0.47"
-
-[[order]]
-
-[[order.group]]
-id = "org.cloudfoundry.php-dist"
-version = "0.0.49"
-
-[[order.group]]
-id = "org.cloudfoundry.php-composer"
-optional = true
-version = "0.0.28"
-
-[[order.group]]
-id = "org.cloudfoundry.nginx"
-optional = true
-version = "0.0.48"
-
-[[order.group]]
-id = "org.cloudfoundry.php-web"
-version = "0.0.47"
-
-[[order]]
-
-[[order.group]]
 id = "org.cloudfoundry.httpd"
 optional = true
 version = "0.0.45"
 
 [[order.group]]
 id = "org.cloudfoundry.php-compat"
-version = "0.0.1"
+version = "0.0.3"
 
 [[order.group]]
 id = "org.cloudfoundry.php-dist"
@@ -144,7 +104,7 @@ version = "0.0.48"
 
 [[order.group]]
 id = "org.cloudfoundry.php-compat"
-version = "0.0.1"
+version = "0.0.3"
 
 [[order.group]]
 id = "org.cloudfoundry.php-dist"
