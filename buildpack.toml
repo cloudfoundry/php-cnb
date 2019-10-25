@@ -10,12 +10,12 @@ include_files = ["buildpack.toml"]
 
 [[metadata.dependencies]]
 id = "org.cloudfoundry.httpd"
-sha256 = "d312122fee1707465e3b8420ce75c9a7905cb42291a4c2eebc72b5a49a6a5fca"
-source = "https://github.com/cloudfoundry/httpd-cnb/archive/v0.0.47.tar.gz"
-source_sha256 = "98ea006d7edeeae6fd77bebd0cbb67e0f5f14f9f8caae6f83e54ab9d9e4e774a"
+sha256 = "a0cbbb7714bbfd268193c2885bd7e96a251e89d75fd9baa7aa34e1947ad065c8"
+source = "https://github.com/cloudfoundry/httpd-cnb/archive/v0.0.48.tar.gz"
+source_sha256 = "45bd808368c8ce5280a7513c95f2400770ef21047c223f629edccb452223bc41"
 stacks = ["org.cloudfoundry.stacks.tiny","io.buildpacks.stacks.bionic","org.cloudfoundry.stacks.cflinuxfs3"]
-uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.httpd/org.cloudfoundry.httpd-0.0.47-any-stack-d312122f.tgz"
-version = "0.0.47"
+uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.httpd/org.cloudfoundry.httpd-0.0.48-any-stack-a0cbbb77.tgz"
+version = "0.0.48"
 
 [[metadata.dependencies]]
 id = "org.cloudfoundry.nginx"
@@ -67,7 +67,7 @@ version = "0.0.29"
 [[order.group]]
 id = "org.cloudfoundry.httpd"
 optional = true
-version = "0.0.47"
+version = "0.0.48"
 
 [[order.group]]
 id = "org.cloudfoundry.php-web"
