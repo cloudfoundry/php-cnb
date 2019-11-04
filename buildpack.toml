@@ -121,27 +121,27 @@ API = "0.2"
     SHA256 = "75679a316c658988c8369b794fc1a541a6ba7381c3af15de018973283da69c82"
     Source = "https://github.com/cloudfoundry/php-web-cnb/archive/v0.0.55.tar.gz"
     source_sha256 = "b4e6cfa1d6a8a26341eb6dd00e82cc23544f3f4f3590cacf905313070557601e"
-    Stacks = ["io.buildpacks.stacks.bionic"]
-    URI = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.php-web/org.cloudfoundry.php-web-0.0.55-any-stack-75679a31.tgz"
-    Version = "0.0.55"
-
-  [[Metadata.Dependencies]]
-    ID = "org.cloudfoundry.php-web"
-    SHA256 = "75679a316c658988c8369b794fc1a541a6ba7381c3af15de018973283da69c82"
-    Source = "https://github.com/cloudfoundry/php-web-cnb/archive/v0.0.55.tar.gz"
-    source_sha256 = "b4e6cfa1d6a8a26341eb6dd00e82cc23544f3f4f3590cacf905313070557601e"
-    Stacks = ["org.cloudfoundry.stacks.cflinuxfs3"]
-    URI = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.php-web/org.cloudfoundry.php-web-0.0.55-any-stack-75679a31.tgz"
-    Version = "0.0.55"
-
-  [[Metadata.Dependencies]]
-    ID = "org.cloudfoundry.php-web"
-    SHA256 = "75679a316c658988c8369b794fc1a541a6ba7381c3af15de018973283da69c82"
-    Source = "https://github.com/cloudfoundry/php-web-cnb/archive/v0.0.55.tar.gz"
-    source_sha256 = "b4e6cfa1d6a8a26341eb6dd00e82cc23544f3f4f3590cacf905313070557601e"
     Stacks = ["org.cloudfoundry.stacks.tiny"]
     URI = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.php-web/org.cloudfoundry.php-web-0.0.55-any-stack-75679a31.tgz"
     Version = "0.0.55"
+
+  [[Metadata.Dependencies]]
+    ID = "org.cloudfoundry.php-web"
+    SHA256 = "abcb595d76c1bb062afea5c1913fc380f74db3ba9a9d7469ae9c615779baa6f4"
+    Source = "https://github.com/cloudfoundry/php-web-cnb/archive/v0.0.56.tar.gz"
+    source_sha256 = "66feaf3cab7ed81889eadd4e833b71194d04c4dbcf628b6b39b6cc5a1fd5e160"
+    Stacks = ["io.buildpacks.stacks.bionic"]
+    URI = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.php-web/org.cloudfoundry.php-web-0.0.56-any-stack-abcb595d.tgz"
+    Version = "0.0.56"
+
+  [[Metadata.Dependencies]]
+    ID = "org.cloudfoundry.php-web"
+    SHA256 = "abcb595d76c1bb062afea5c1913fc380f74db3ba9a9d7469ae9c615779baa6f4"
+    Source = "https://github.com/cloudfoundry/php-web-cnb/archive/v0.0.56.tar.gz"
+    source_sha256 = "66feaf3cab7ed81889eadd4e833b71194d04c4dbcf628b6b39b6cc5a1fd5e160"
+    Stacks = ["org.cloudfoundry.stacks.cflinuxfs3"]
+    URI = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.php-web/org.cloudfoundry.php-web-0.0.56-any-stack-abcb595d.tgz"
+    Version = "0.0.56"
 
 [[order]]
 
@@ -159,7 +159,7 @@ API = "0.2"
 
   [[order.Group]]
     ID = "org.cloudfoundry.php-web"
-    Version = "0.0.55"
+    Version = "0.0.56"
 
 [[order]]
 
@@ -177,4 +177,4 @@ API = "0.2"
 
   [[order.Group]]
     ID = "org.cloudfoundry.php-web"
-    Version = "0.0.55"
+    Version = "0.0.56"
