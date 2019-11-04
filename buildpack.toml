@@ -13,27 +13,27 @@ API = "0.2"
     SHA256 = "a7dd88bc25e45024e8ae01f1d8d88a08144541b9c1113d54716f36e230ab5ab5"
     Source = "https://github.com/cloudfoundry/httpd-cnb/archive/v0.0.51.tar.gz"
     source_sha256 = "f2b0bec6c9788f1a777e2269315efc55607726faee9bb758f81b7a64b5bf0848"
-    Stacks = ["io.buildpacks.stacks.bionic"]
-    URI = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.httpd/org.cloudfoundry.httpd-0.0.51-any-stack-a7dd88bc.tgz"
-    Version = "0.0.51"
-
-  [[Metadata.Dependencies]]
-    ID = "org.cloudfoundry.httpd"
-    SHA256 = "a7dd88bc25e45024e8ae01f1d8d88a08144541b9c1113d54716f36e230ab5ab5"
-    Source = "https://github.com/cloudfoundry/httpd-cnb/archive/v0.0.51.tar.gz"
-    source_sha256 = "f2b0bec6c9788f1a777e2269315efc55607726faee9bb758f81b7a64b5bf0848"
-    Stacks = ["org.cloudfoundry.stacks.cflinuxfs3"]
-    URI = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.httpd/org.cloudfoundry.httpd-0.0.51-any-stack-a7dd88bc.tgz"
-    Version = "0.0.51"
-
-  [[Metadata.Dependencies]]
-    ID = "org.cloudfoundry.httpd"
-    SHA256 = "a7dd88bc25e45024e8ae01f1d8d88a08144541b9c1113d54716f36e230ab5ab5"
-    Source = "https://github.com/cloudfoundry/httpd-cnb/archive/v0.0.51.tar.gz"
-    source_sha256 = "f2b0bec6c9788f1a777e2269315efc55607726faee9bb758f81b7a64b5bf0848"
     Stacks = ["org.cloudfoundry.stacks.tiny"]
     URI = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.httpd/org.cloudfoundry.httpd-0.0.51-any-stack-a7dd88bc.tgz"
     Version = "0.0.51"
+
+  [[Metadata.Dependencies]]
+    ID = "org.cloudfoundry.httpd"
+    SHA256 = "ae13cacd0bb67275ddcd0c342f1b5a6d171824ec5f892c63203d533e4946959a"
+    Source = "https://github.com/cloudfoundry/httpd-cnb/archive/v0.0.52.tar.gz"
+    source_sha256 = "48276e6cabd9bc9492e2f18d8ea8bc789b64613ad1c90e49991d2cc252e3c0d3"
+    Stacks = ["io.buildpacks.stacks.bionic"]
+    URI = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.httpd/org.cloudfoundry.httpd-0.0.52-any-stack-ae13cacd.tgz"
+    Version = "0.0.52"
+
+  [[Metadata.Dependencies]]
+    ID = "org.cloudfoundry.httpd"
+    SHA256 = "ae13cacd0bb67275ddcd0c342f1b5a6d171824ec5f892c63203d533e4946959a"
+    Source = "https://github.com/cloudfoundry/httpd-cnb/archive/v0.0.52.tar.gz"
+    source_sha256 = "48276e6cabd9bc9492e2f18d8ea8bc789b64613ad1c90e49991d2cc252e3c0d3"
+    Stacks = ["org.cloudfoundry.stacks.cflinuxfs3"]
+    URI = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.httpd/org.cloudfoundry.httpd-0.0.52-any-stack-ae13cacd.tgz"
+    Version = "0.0.52"
 
   [[Metadata.Dependencies]]
     ID = "org.cloudfoundry.nginx"
@@ -155,7 +155,7 @@ API = "0.2"
 
   [[order.Group]]
     ID = "org.cloudfoundry.httpd"
-    Version = "0.0.51"
+    Version = "0.0.52"
 
   [[order.Group]]
     ID = "org.cloudfoundry.php-web"
