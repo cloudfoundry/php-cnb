@@ -74,21 +74,21 @@ api = "0.2"
 
   [[metadata.dependencies]]
     id = "org.cloudfoundry.php-composer"
-    sha256 = "d2f99b111cd7e0be6521d305c46f603eebd381959a7b5ad06df4263b2f2bd3f6"
-    source = "https://github.com/cloudfoundry/php-composer-cnb/archive/v0.0.37.tar.gz"
-    source_sha256 = "7c856c0cc0142b7d996d09983899575d6e9e634901fae19462da28e2d6ff3aa3"
+    sha256 = "0b6d543517c468146d069ec3d4b95cd97c2a84a5b6281da1bd2f51de521b5c96"
+    source = "https://github.com/cloudfoundry/php-composer-cnb/archive/v0.0.38.tar.gz"
+    source_sha256 = "447c09509a409cc21e5461b3a1e86630b5b694e39adc4055aaefb3e84b50ec5f"
     stacks = ["io.buildpacks.stacks.bionic"]
-    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.php-composer/org.cloudfoundry.php-composer-0.0.37-any-stack-d2f99b11.tgz"
-    version = "0.0.37"
+    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.php-composer/org.cloudfoundry.php-composer-0.0.38-any-stack-0b6d5435.tgz"
+    version = "0.0.38"
 
   [[metadata.dependencies]]
     id = "org.cloudfoundry.php-composer"
-    sha256 = "d2f99b111cd7e0be6521d305c46f603eebd381959a7b5ad06df4263b2f2bd3f6"
-    source = "https://github.com/cloudfoundry/php-composer-cnb/archive/v0.0.37.tar.gz"
-    source_sha256 = "7c856c0cc0142b7d996d09983899575d6e9e634901fae19462da28e2d6ff3aa3"
+    sha256 = "0b6d543517c468146d069ec3d4b95cd97c2a84a5b6281da1bd2f51de521b5c96"
+    source = "https://github.com/cloudfoundry/php-composer-cnb/archive/v0.0.38.tar.gz"
+    source_sha256 = "447c09509a409cc21e5461b3a1e86630b5b694e39adc4055aaefb3e84b50ec5f"
     stacks = ["org.cloudfoundry.stacks.cflinuxfs3"]
-    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.php-composer/org.cloudfoundry.php-composer-0.0.37-any-stack-d2f99b11.tgz"
-    version = "0.0.37"
+    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.php-composer/org.cloudfoundry.php-composer-0.0.38-any-stack-0b6d5435.tgz"
+    version = "0.0.38"
 
   [[metadata.dependencies]]
     id = "org.cloudfoundry.php-dist"
@@ -152,7 +152,7 @@ api = "0.2"
 
   [[order.group]]
     id = "org.cloudfoundry.php-composer"
-    version = "0.0.37"
+    version = "0.0.38"
 
   [[order.group]]
     id = "org.cloudfoundry.httpd"
@@ -170,7 +170,7 @@ api = "0.2"
 
   [[order.group]]
     id = "org.cloudfoundry.php-composer"
-    version = "0.0.37"
+    version = "0.0.38"
 
   [[order.group]]
     id = "org.cloudfoundry.nginx"
