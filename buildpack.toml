@@ -20,21 +20,21 @@ api = "0.2"
 
   [[metadata.dependencies]]
     id = "org.cloudfoundry.httpd"
-    sha256 = "69682d4a1cf1a37b69954b234a4df16394a2778f6fbd131efbbbf134bfe58699"
-    source = "https://github.com/cloudfoundry/httpd-cnb/archive/v0.0.56.tar.gz"
-    source_sha256 = "5fbc59485087db64f39b1e1f153c75d815510caf409e16be7909e0befb207d2b"
+    sha256 = "87c2df3c9b7d15f1fcb85b82b804470f2c5bca6dcb8bb0a688428901bbee3ed3"
+    source = "https://github.com/cloudfoundry/httpd-cnb/archive/v0.0.57.tar.gz"
+    source_sha256 = "4ef6810481f195836faae7cdc8d0d8d05dabcb4e182fa0c19643d689e404b122"
     stacks = ["io.buildpacks.stacks.bionic"]
-    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.httpd/org.cloudfoundry.httpd-0.0.56-any-stack-69682d4a.tgz"
-    version = "0.0.56"
+    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.httpd/org.cloudfoundry.httpd-0.0.57-any-stack-87c2df3c.tgz"
+    version = "0.0.57"
 
   [[metadata.dependencies]]
     id = "org.cloudfoundry.httpd"
-    sha256 = "69682d4a1cf1a37b69954b234a4df16394a2778f6fbd131efbbbf134bfe58699"
-    source = "https://github.com/cloudfoundry/httpd-cnb/archive/v0.0.56.tar.gz"
-    source_sha256 = "5fbc59485087db64f39b1e1f153c75d815510caf409e16be7909e0befb207d2b"
+    sha256 = "87c2df3c9b7d15f1fcb85b82b804470f2c5bca6dcb8bb0a688428901bbee3ed3"
+    source = "https://github.com/cloudfoundry/httpd-cnb/archive/v0.0.57.tar.gz"
+    source_sha256 = "4ef6810481f195836faae7cdc8d0d8d05dabcb4e182fa0c19643d689e404b122"
     stacks = ["org.cloudfoundry.stacks.cflinuxfs3"]
-    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.httpd/org.cloudfoundry.httpd-0.0.56-any-stack-69682d4a.tgz"
-    version = "0.0.56"
+    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.httpd/org.cloudfoundry.httpd-0.0.57-any-stack-87c2df3c.tgz"
+    version = "0.0.57"
 
   [[metadata.dependencies]]
     id = "org.cloudfoundry.nginx"
@@ -156,7 +156,7 @@ api = "0.2"
 
   [[order.group]]
     id = "org.cloudfoundry.httpd"
-    version = "0.0.56"
+    version = "0.0.57"
 
   [[order.group]]
     id = "org.cloudfoundry.php-web"
