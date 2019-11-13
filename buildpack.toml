@@ -11,15 +11,6 @@ api = "0.2"
 
   [[metadata.dependencies]]
     id = "org.cloudfoundry.httpd"
-    sha256 = "a7dd88bc25e45024e8ae01f1d8d88a08144541b9c1113d54716f36e230ab5ab5"
-    source = "https://github.com/cloudfoundry/httpd-cnb/archive/v0.0.51.tar.gz"
-    source_sha256 = "f2b0bec6c9788f1a777e2269315efc55607726faee9bb758f81b7a64b5bf0848"
-    stacks = ["org.cloudfoundry.stacks.tiny"]
-    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.httpd/org.cloudfoundry.httpd-0.0.51-any-stack-a7dd88bc.tgz"
-    version = "0.0.51"
-
-  [[metadata.dependencies]]
-    id = "org.cloudfoundry.httpd"
     sha256 = "87c2df3c9b7d15f1fcb85b82b804470f2c5bca6dcb8bb0a688428901bbee3ed3"
     source = "https://github.com/cloudfoundry/httpd-cnb/archive/v0.0.57.tar.gz"
     source_sha256 = "4ef6810481f195836faae7cdc8d0d8d05dabcb4e182fa0c19643d689e404b122"
@@ -35,15 +26,6 @@ api = "0.2"
     stacks = ["org.cloudfoundry.stacks.cflinuxfs3"]
     uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.httpd/org.cloudfoundry.httpd-0.0.57-any-stack-87c2df3c.tgz"
     version = "0.0.57"
-
-  [[metadata.dependencies]]
-    id = "org.cloudfoundry.nginx"
-    sha256 = "04d5eb413ea77244c207f531d198a377a9761b2150ce29742847bb45f3fea0c7"
-    source = "https://github.com/cloudfoundry/nginx-cnb/archive/v0.0.55.tar.gz"
-    source_sha256 = "5700bbb30c47f3c7773f29b209568a7dae7541472d5e071bed7e475314b7c98b"
-    stacks = ["org.cloudfoundry.stacks.tiny"]
-    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.nginx/org.cloudfoundry.nginx-0.0.55-any-stack-04d5eb41.tgz"
-    version = "0.0.55"
 
   [[metadata.dependencies]]
     id = "org.cloudfoundry.nginx"
@@ -65,15 +47,6 @@ api = "0.2"
 
   [[metadata.dependencies]]
     id = "org.cloudfoundry.php-composer"
-    sha256 = "e28be5df46b949ca5452a9b731f8204799f688f6aec6743a56c09c9270d4c797"
-    source = "https://github.com/cloudfoundry/php-composer-cnb/archive/v0.0.35.tar.gz"
-    source_sha256 = "1f7fec7566031e62e2c48f46879e3882dcb05f7ce94a8d4fa954310f4af6513c"
-    stacks = ["org.cloudfoundry.stacks.tiny"]
-    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.php-composer/org.cloudfoundry.php-composer-0.0.35-any-stack-e28be5df.tgz"
-    version = "0.0.35"
-
-  [[metadata.dependencies]]
-    id = "org.cloudfoundry.php-composer"
     sha256 = "9686d99325141d6597ceef13b63799f1a528dbea98ba577949b50c8953c2ebaa"
     source = "https://github.com/cloudfoundry/php-composer-cnb/archive/v0.0.40.tar.gz"
     source_sha256 = "695205f42b222bc6633d86cd2bfb82918115cb525e8259947210c5911980be93"
@@ -92,15 +65,6 @@ api = "0.2"
 
   [[metadata.dependencies]]
     id = "org.cloudfoundry.php-dist"
-    sha256 = "f053c49fcebd5de0adab4f7a50c6c48df1cbba0a0ef1c839cfc83dc38a7c5e68"
-    source = "https://github.com/cloudfoundry/php-dist-cnb/archive/v0.0.58.tar.gz"
-    source_sha256 = "4e77c325c80495b09844044b1aa6fbf42306db1b901fcba8f87b24a018f0a5ef"
-    stacks = ["org.cloudfoundry.stacks.tiny"]
-    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.php-dist/org.cloudfoundry.php-dist-0.0.58-any-stack-f053c49f.tgz"
-    version = "0.0.58"
-
-  [[metadata.dependencies]]
-    id = "org.cloudfoundry.php-dist"
     sha256 = "3e5980cf01cdb016ef24060bc41b04f43a14b329803e5da4a901a2176a2cd65d"
     source = "https://github.com/cloudfoundry/php-dist-cnb/archive/v0.0.61.tar.gz"
     source_sha256 = "84c67d7b7c13e860303cf02b0ab5bfd024c53f35028bb64d009558a186ce3df2"
@@ -116,15 +80,6 @@ api = "0.2"
     stacks = ["org.cloudfoundry.stacks.cflinuxfs3"]
     uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.php-dist/org.cloudfoundry.php-dist-0.0.61-any-stack-3e5980cf.tgz"
     version = "0.0.61"
-
-  [[metadata.dependencies]]
-    id = "org.cloudfoundry.php-web"
-    sha256 = "75679a316c658988c8369b794fc1a541a6ba7381c3af15de018973283da69c82"
-    source = "https://github.com/cloudfoundry/php-web-cnb/archive/v0.0.55.tar.gz"
-    source_sha256 = "b4e6cfa1d6a8a26341eb6dd00e82cc23544f3f4f3590cacf905313070557601e"
-    stacks = ["org.cloudfoundry.stacks.tiny"]
-    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.php-web/org.cloudfoundry.php-web-0.0.55-any-stack-75679a31.tgz"
-    version = "0.0.55"
 
   [[metadata.dependencies]]
     id = "org.cloudfoundry.php-web"
@@ -152,10 +107,12 @@ api = "0.2"
 
   [[order.group]]
     id = "org.cloudfoundry.php-composer"
+    optional = true
     version = "0.0.40"
 
   [[order.group]]
     id = "org.cloudfoundry.httpd"
+    optional = true
     version = "0.0.57"
 
   [[order.group]]
@@ -170,10 +127,12 @@ api = "0.2"
 
   [[order.group]]
     id = "org.cloudfoundry.php-composer"
+    optional = true
     version = "0.0.40"
 
   [[order.group]]
     id = "org.cloudfoundry.nginx"
+    optional = true
     version = "0.0.61"
 
   [[order.group]]
