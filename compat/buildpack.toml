@@ -1,9 +1,9 @@
 api = "0.2"
 
 [buildpack]
-id = "org.cloudfoundry.shim.php"
-name = "PHP Shim Buildpack"
-version = "{{.Version}}"
+  id = "org.cloudfoundry.shim.php"
+  name = "PHP Shim Buildpack"
+  version = "{{.Version}}"
 
 [metadata]
   dependency_deprecation_dates = []
@@ -14,18 +14,9 @@ version = "{{.Version}}"
     sha256 = "fe37503098e964aa1a052abb50fecf2de3624c0049506e638c86dc5b4b7909e8"
     source = "https://github.com/buildpack/lifecycle/releases/download/v0.5.0/lifecycle-v0.5.0%2Blinux.x86-64.tgz"
     source_sha256 = "fe37503098e964aa1a052abb50fecf2de3624c0049506e638c86dc5b4b7909e8"
-    stacks = ["org.cloudfoundry.stacks.tiny","io.buildpacks.stacks.bionic","org.cloudfoundry.stacks.cflinuxfs3"]
+    stacks = ["io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3", "org.cloudfoundry.stacks.tiny"]
     uri = "https://buildpacks.cloudfoundry.org/dependencies/lifecycle/lifecycle-0.5.0-any-stack-fe375030.tgz"
     version = "0.5.0"
-
-  [[metadata.dependencies]]
-    id = "org.cloudfoundry.php-compat"
-    uri = "https://github.com/cloudfoundry/php-compat-cnb/releases/download/v0.0.19/php-compat-cnb-0.0.19.tgz"
-    sha256 = "32ec7e0dc54fdd1c7dedd6b48844e84e98ccdf31239f4b8e5b10e1bda62d8c65"
-    source = "https://github.com/cloudfoundry/php-compat-cnb/archive/v0.0.19.tar.gz"
-    source_sha256 = "62d1e09a596121b38c977074cc1816a7549f783c960284f538ac403ed1b02757"
-    stacks = ["org.cloudfoundry.stacks.cflinuxfs3"]
-    version = "0.0.19"
 
   [[metadata.dependencies]]
     id = "org.cloudfoundry.httpd"
@@ -46,13 +37,22 @@ version = "{{.Version}}"
     version = "0.0.64"
 
   [[metadata.dependencies]]
+    id = "org.cloudfoundry.php-compat"
+    sha256 = "32ec7e0dc54fdd1c7dedd6b48844e84e98ccdf31239f4b8e5b10e1bda62d8c65"
+    source = "https://github.com/cloudfoundry/php-compat-cnb/archive/v0.0.19.tar.gz"
+    source_sha256 = "62d1e09a596121b38c977074cc1816a7549f783c960284f538ac403ed1b02757"
+    stacks = ["org.cloudfoundry.stacks.cflinuxfs3"]
+    uri = "https://github.com/cloudfoundry/php-compat-cnb/releases/download/v0.0.19/php-compat-cnb-0.0.19.tgz"
+    version = "0.0.19"
+
+  [[metadata.dependencies]]
     id = "org.cloudfoundry.php-composer"
-    sha256 = "3bf18717bf568709efb3517a5ccb9170e019d7d1979e6c7383e0bacd2780a0cc"
-    source = "https://github.com/cloudfoundry/php-composer-cnb/archive/v0.0.44.tar.gz"
-    source_sha256 = "ecbca90cdbd34d9b58f88d33f3637f9e2caff16e4d135df737c26e98e8851960"
+    sha256 = "b03b9fcf92428ecdbf545d70a26ffcb0138813a985711081c8fe2b70ac0aa66b"
+    source = "https://github.com/cloudfoundry/php-composer-cnb/archive/v0.0.48.tar.gz"
+    source_sha256 = "b5e0e647fe7283f31b069d31c52c1ac6d496325cf1dc71fe69b562910b32c937"
     stacks = ["io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3"]
-    uri = "https://github.com/cloudfoundry/php-composer-cnb/releases/download/v0.0.44/php-composer-cnb-0.0.44.tgz"
-    version = "0.0.44"
+    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.php-composer/org.cloudfoundry.php-composer-0.0.48-any-stack-b03b9fcf.tgz"
+    version = "0.0.48"
 
   [[metadata.dependencies]]
     id = "org.cloudfoundry.php-dist"
@@ -74,48 +74,48 @@ version = "{{.Version}}"
 
 [[order]]
 
-[[order.group]]
-id = "org.cloudfoundry.httpd"
-optional = true
-version = "0.0.60"
+  [[order.group]]
+    id = "org.cloudfoundry.httpd"
+    version = "0.0.60"
+    optional = true
 
-[[order.group]]
-id = "org.cloudfoundry.php-compat"
-version = "0.0.19"
+  [[order.group]]
+    id = "org.cloudfoundry.php-compat"
+    version = "0.0.19"
 
-[[order.group]]
-id = "org.cloudfoundry.php-dist"
-version = "0.0.64"
+  [[order.group]]
+    id = "org.cloudfoundry.php-dist"
+    version = "0.0.64"
 
-[[order.group]]
-id = "org.cloudfoundry.php-composer"
-optional = true
-version = "0.0.44"
+  [[order.group]]
+    id = "org.cloudfoundry.php-composer"
+    version = "0.0.48"
+    optional = true
 
-[[order.group]]
-id = "org.cloudfoundry.php-web"
-version = "0.0.66"
+  [[order.group]]
+    id = "org.cloudfoundry.php-web"
+    version = "0.0.66"
 
 [[order]]
 
-[[order.group]]
-id = "org.cloudfoundry.nginx"
-optional = true
-version = "0.0.64"
+  [[order.group]]
+    id = "org.cloudfoundry.nginx"
+    version = "0.0.64"
+    optional = true
 
-[[order.group]]
-id = "org.cloudfoundry.php-compat"
-version = "0.0.19"
+  [[order.group]]
+    id = "org.cloudfoundry.php-compat"
+    version = "0.0.19"
 
-[[order.group]]
-id = "org.cloudfoundry.php-dist"
-version = "0.0.64"
+  [[order.group]]
+    id = "org.cloudfoundry.php-dist"
+    version = "0.0.64"
 
-[[order.group]]
-id = "org.cloudfoundry.php-composer"
-optional = true
-version = "0.0.44"
+  [[order.group]]
+    id = "org.cloudfoundry.php-composer"
+    version = "0.0.48"
+    optional = true
 
-[[order.group]]
-id = "org.cloudfoundry.php-web"
-version = "0.0.66"
+  [[order.group]]
+    id = "org.cloudfoundry.php-web"
+    version = "0.0.66"
