@@ -59,8 +59,17 @@ api = "0.2"
     sha256 = "4de09b8a9beb2605c51dae326f3ef5cada150a5cf5239a02c7b559a31e4594aa"
     source = "https://github.com/cloudfoundry/php-dist-cnb/archive/v0.0.97.tar.gz"
     source_sha256 = "c795f888771b939d925550e859a3bb4d6856698b8e8d4ab64db0ed165ce9c273"
-    stacks = ["io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3"]
+    stacks = ["io.buildpacks.stacks.bionic"]
     uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.php-dist/org.cloudfoundry.php-dist-0.0.97-any-stack-4de09b8a.tgz"
+    version = "0.0.97"
+
+  [[metadata.dependencies]]
+    id = "org.cloudfoundry.php-dist"
+    sha256 = "4de09b8a9beb2605c51dae326f3ef5cada150a5cf5239a02c7b559a31e4594aa"
+    source = "https://github.com/cloudfoundry/php-dist-cnb/archive/v0.0.97.tar.gz"
+    source_sha256 = "c795f888771b939d925550e859a3bb4d6856698b8e8d4ab64db0ed165ce9c273"
+    stacks = ["org.cloudfoundry.stacks.cflinuxfs3"]
+    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.php-dist/org.cloudfoundry.php-dist-0.0.97-cflinuxfs3-4de09b8a.tgz"
     version = "0.0.97"
 
   [[metadata.dependencies]]
