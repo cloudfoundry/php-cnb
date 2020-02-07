@@ -56,12 +56,12 @@ api = "0.2"
 
   [[metadata.dependencies]]
     id = "org.cloudfoundry.php-dist"
-    sha256 = "b4020fd4673a19ac9878a9634b09170d557e2f2bd95ab5aeb78cba69688a0a23"
-    source = "https://github.com/cloudfoundry/php-dist-cnb/archive/v0.0.104.tar.gz"
-    source_sha256 = "5b2573c890b27a5d814d5f52dd1794ce330547fd59ac69053bce546a97000966"
+    sha256 = "574312c33d3429e8e710c85e4f743bd6d8395fb26a16f284313c87678a1f672d"
+    source = "https://github.com/cloudfoundry/php-dist-cnb/archive/v0.0.105.tar.gz"
+    source_sha256 = "435c05cd2b9e7013ffada9cba32f291087f12ff7a917470a95d36dab27168ac9"
     stacks = ["org.cloudfoundry.stacks.cflinuxfs3"]
-    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.php-dist/org.cloudfoundry.php-dist-0.0.104-cflinuxfs3-b4020fd4.tgz"
-    version = "0.0.104"
+    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.php-dist/org.cloudfoundry.php-dist-0.0.105-cflinuxfs3-574312c3.tgz"
+    version = "0.0.105"
 
   [[metadata.dependencies]]
     id = "org.cloudfoundry.php-web"
@@ -85,7 +85,7 @@ api = "0.2"
 
   [[order.group]]
     id = "org.cloudfoundry.php-dist"
-    version = "0.0.104"
+    version = "0.0.105"
 
   [[order.group]]
     id = "org.cloudfoundry.php-composer"
@@ -109,7 +109,7 @@ api = "0.2"
 
   [[order.group]]
     id = "org.cloudfoundry.php-dist"
-    version = "0.0.104"
+    version = "0.0.105"
 
   [[order.group]]
     id = "org.cloudfoundry.php-composer"
