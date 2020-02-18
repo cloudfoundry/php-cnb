@@ -57,24 +57,14 @@ api = "0.2"
 [[order]]
 
   [[order.group]]
-    id = "org.cloudfoundry.php-dist"
-    version = "0.0.115"
-
-  [[order.group]]
-    id = "org.cloudfoundry.php-composer"
-    version = "0.0.58"
-    optional = true
-
-  [[order.group]]
     id = "org.cloudfoundry.httpd"
     version = "0.0.96"
     optional = true
 
   [[order.group]]
-    id = "org.cloudfoundry.php-web"
-    version = "0.0.83"
-
-[[order]]
+    id = "org.cloudfoundry.nginx"
+    version = "0.0.102"
+    optional = true
 
   [[order.group]]
     id = "org.cloudfoundry.php-dist"
@@ -83,11 +73,6 @@ api = "0.2"
   [[order.group]]
     id = "org.cloudfoundry.php-composer"
     version = "0.0.58"
-    optional = true
-
-  [[order.group]]
-    id = "org.cloudfoundry.nginx"
-    version = "0.0.102"
     optional = true
 
   [[order.group]]

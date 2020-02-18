@@ -38,12 +38,12 @@ api = "0.2"
 
   [[metadata.dependencies]]
     id = "org.cloudfoundry.php-compat"
-    sha256 = "f3310b2acc52d0a502507ce2923fda301621a825328b6bd915b898fdaf3baa52"
-    source = "https://github.com/cloudfoundry/php-compat-cnb/archive/v0.0.40.tar.gz"
-    source_sha256 = "a817bc91b150160606072cbd353a5dc9936fc267741f045cef939d11dc53a83a"
+    sha256 = "f2f65326650ad84cec1ec8c90ac3644e52bf3aef6c299064e794f2f83d42a9d4"
+    source = "https://github.com/cloudfoundry/php-compat-cnb/archive/v0.0.50.tar.gz"
+    source_sha256 = "e99e8c48c5d80f5be492926923bc920ed8c8b0f56c83c31ac14d76720c13d2d2"
     stacks = ["org.cloudfoundry.stacks.cflinuxfs3"]
-    uri = "https://github.com/cloudfoundry/php-compat-cnb/releases/download/v0.0.40/php-compat-cnb-0.0.40.tgz"
-    version = "0.0.40"
+    uri = "https://github.com/cloudfoundry/php-compat-cnb/releases/download/v0.0.50/php-compat-cnb-0.0.50.tgz"
+    version = "0.0.50"
 
   [[metadata.dependencies]]
     id = "org.cloudfoundry.php-composer"
@@ -75,47 +75,29 @@ api = "0.2"
 [[order]]
 
   [[order.group]]
-    id = "org.cloudfoundry.httpd"
-    version = "0.0.96"
-    optional = true
+  id = "org.cloudfoundry.httpd"
+  version = "0.0.96"
+  optional = true
 
   [[order.group]]
-    id = "org.cloudfoundry.php-compat"
-    version = "0.0.40"
+  id = "org.cloudfoundry.nginx"
+  optional = true
+  version = "0.0.102"
 
   [[order.group]]
-    id = "org.cloudfoundry.php-dist"
-    version = "0.0.115"
+  id = "org.cloudfoundry.php-dist"
+  version = "0.0.115"
 
   [[order.group]]
-    id = "org.cloudfoundry.php-composer"
-    version = "0.0.58"
-    optional = true
+  id = "org.cloudfoundry.php-compat"
+  version = "0.0.50"
+  optional = true
 
   [[order.group]]
-    id = "org.cloudfoundry.php-web"
-    version = "0.0.83"
-
-[[order]]
-
-  [[order.group]]
-    id = "org.cloudfoundry.nginx"
-    version = "0.0.102"
-    optional = true
+  id = "org.cloudfoundry.php-composer"
+  version = "0.0.58"
+  optional = true
 
   [[order.group]]
-    id = "org.cloudfoundry.php-compat"
-    version = "0.0.40"
-
-  [[order.group]]
-    id = "org.cloudfoundry.php-dist"
-    version = "0.0.115"
-
-  [[order.group]]
-    id = "org.cloudfoundry.php-composer"
-    version = "0.0.58"
-    optional = true
-
-  [[order.group]]
-    id = "org.cloudfoundry.php-web"
-    version = "0.0.83"
+  id = "org.cloudfoundry.php-web"
+  version = "0.0.83"
