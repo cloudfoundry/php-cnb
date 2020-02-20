@@ -56,12 +56,12 @@ api = "0.2"
 
   [[metadata.dependencies]]
     id = "org.cloudfoundry.php-dist"
-    sha256 = "ab97c3a3501fcfc0bd2cfb1416eb53f736c183e134bada9c32562809c29df7ea"
-    source = "https://github.com/cloudfoundry/php-dist-cnb/archive/v0.0.115.tar.gz"
-    source_sha256 = "2fa181ef76eff25ab4247edb60cb4d0d1d5645785179d73e7078c873d3047394"
+    sha256 = "60c3b6742ffe2d135044ff1a538df85b20d69e7db130409d03020d4e48495f05"
+    source = "https://github.com/cloudfoundry/php-dist-cnb/archive/v0.0.116.tar.gz"
+    source_sha256 = "a0380e2893c15e17975281ebfbf2337d901dc537175db8205e97f4d1be8d67ec"
     stacks = ["org.cloudfoundry.stacks.cflinuxfs3"]
-    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.php-dist/org.cloudfoundry.php-dist-0.0.115-cflinuxfs3-ab97c3a3.tgz"
-    version = "0.0.115"
+    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.php-dist/org.cloudfoundry.php-dist-0.0.116-cflinuxfs3-60c3b674.tgz"
+    version = "0.0.116"
 
   [[metadata.dependencies]]
     id = "org.cloudfoundry.php-web"
@@ -75,29 +75,29 @@ api = "0.2"
 [[order]]
 
   [[order.group]]
-  id = "org.cloudfoundry.httpd"
-  version = "0.0.96"
-  optional = true
+    id = "org.cloudfoundry.httpd"
+    version = "0.0.96"
+    optional = true
 
   [[order.group]]
-  id = "org.cloudfoundry.nginx"
-  optional = true
-  version = "0.0.102"
+    id = "org.cloudfoundry.nginx"
+    version = "0.0.102"
+    optional = true
 
   [[order.group]]
-  id = "org.cloudfoundry.php-dist"
-  version = "0.0.115"
+    id = "org.cloudfoundry.php-dist"
+    version = "0.0.116"
 
   [[order.group]]
-  id = "org.cloudfoundry.php-compat"
-  version = "0.0.50"
-  optional = true
+    id = "org.cloudfoundry.php-compat"
+    version = "0.0.50"
+    optional = true
 
   [[order.group]]
-  id = "org.cloudfoundry.php-composer"
-  version = "0.0.58"
-  optional = true
+    id = "org.cloudfoundry.php-composer"
+    version = "0.0.58"
+    optional = true
 
   [[order.group]]
-  id = "org.cloudfoundry.php-web"
-  version = "0.0.83"
+    id = "org.cloudfoundry.php-web"
+    version = "0.0.83"
