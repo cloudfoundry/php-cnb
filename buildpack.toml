@@ -20,12 +20,12 @@ api = "0.2"
 
   [[metadata.dependencies]]
     id = "org.cloudfoundry.nginx"
-    sha256 = "d25a724f38f9bc40dc2ac1ab821620fb2e8ca87de1353e3f91ab5dcfc089be17"
-    source = "https://github.com/cloudfoundry/nginx-cnb/archive/v0.0.106.tar.gz"
-    source_sha256 = "cc147566324e2c86af5eea95efa178392d86c99c2b3bb86cfbd1a139e1bbd7e2"
+    sha256 = "1bd37c543c50e98ebd31109ba9aff9e2bdd3de2ead668d12a9407515921eb84f"
+    source = "https://github.com/cloudfoundry/nginx-cnb/archive/v0.0.107.tar.gz"
+    source_sha256 = "722bb3386d56163270ba5afeaf85928e44a153f4502773e4c137a20d1e77f95f"
     stacks = ["io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3"]
-    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.nginx/org.cloudfoundry.nginx_0.0.106_linux_noarch_any-stack_d25a724f.tgz"
-    version = "0.0.106"
+    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.nginx/org.cloudfoundry.nginx_0.0.107_linux_noarch_any-stack_1bd37c54.tgz"
+    version = "0.0.107"
 
   [[metadata.dependencies]]
     id = "org.cloudfoundry.php-composer"
@@ -63,7 +63,7 @@ api = "0.2"
 
   [[order.group]]
     id = "org.cloudfoundry.nginx"
-    version = "0.0.106"
+    version = "0.0.107"
     optional = true
 
   [[order.group]]
