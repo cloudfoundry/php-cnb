@@ -38,12 +38,12 @@ api = "0.2"
 
   [[metadata.dependencies]]
     id = "org.cloudfoundry.php-compat"
-    sha256 = "fc43f95bddc56ef61f24b2464532d902300d994e03d7e3acfc3ae1a78c76db80"
-    source = "https://github.com/cloudfoundry/php-compat-cnb/archive/v0.0.53.tar.gz"
-    source_sha256 = "b9443924ab5f8174d9e11c15f27da71c2edd6bcdff441330a9f135bfb7dcbcea"
+    sha256 = "8cc02e44bde78ca146b417b3f7243afbaaed1965f12f1f6e93987cf98c8b0457"
+    source = "https://github.com/cloudfoundry/php-compat-cnb/archive/v0.0.54.tar.gz"
+    source_sha256 = "52fbfff3c11dc68c1e77836ed061bfeec92ebd12abae58208590b40ffd81bd7f"
     stacks = ["io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3"]
-    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.php-compat/org.cloudfoundry.php-compat-0.0.53-any-stack-fc43f95b.tgz"
-    version = "0.0.53"
+    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.php-compat/org.cloudfoundry.php-compat_0.0.54_linux_noarch_any-stack_8cc02e44.tgz"
+    version = "0.0.54"
 
   [[metadata.dependencies]]
     id = "org.cloudfoundry.php-composer"
@@ -90,7 +90,7 @@ api = "0.2"
 
   [[order.group]]
     id = "org.cloudfoundry.php-compat"
-    version = "0.0.53"
+    version = "0.0.54"
     optional = true
 
   [[order.group]]
