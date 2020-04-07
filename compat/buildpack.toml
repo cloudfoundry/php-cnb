@@ -20,12 +20,12 @@ api = "0.2"
 
   [[metadata.dependencies]]
     id = "org.cloudfoundry.httpd"
-    sha256 = "b80093485110620a7c59cdf0605302dde476aad606e36ec14b21a8468b6e9c73"
-    source = "https://github.com/cloudfoundry/httpd-cnb/archive/v0.0.105.tar.gz"
-    source_sha256 = "c48fc9d542867657b6509a201476d6cc017203a41ce1e69ba06fd4d308efacf2"
+    sha256 = "64948313e638859359ddfa6deee45496ebf2ed671d4c49fedca22f098d088466"
+    source = "https://github.com/cloudfoundry/httpd-cnb/archive/v0.0.106.tar.gz"
+    source_sha256 = "d7c34641fad008a0e0184b40016dcde4b0e1eade3206ea4f1c8fe613bcce2ea2"
     stacks = ["io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3"]
-    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.httpd/org.cloudfoundry.httpd_0.0.105_linux_noarch_any-stack_b8009348.tgz"
-    version = "0.0.105"
+    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.httpd/org.cloudfoundry.httpd_0.0.106_linux_noarch_any-stack_64948313.tgz"
+    version = "0.0.106"
 
   [[metadata.dependencies]]
     id = "org.cloudfoundry.nginx"
@@ -76,7 +76,7 @@ api = "0.2"
 
   [[order.group]]
     id = "org.cloudfoundry.httpd"
-    version = "0.0.105"
+    version = "0.0.106"
     optional = true
 
   [[order.group]]
