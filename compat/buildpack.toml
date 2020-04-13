@@ -1,7 +1,7 @@
 api = "0.2"
 
 [buildpack]
-  id = "org.cloudfoundry.shim.php"
+  id = "org.cloudfoundry-test.shim.php"
   name = "PHP Shim Buildpack"
   version = "{{.Version}}"
 
@@ -11,15 +11,15 @@ api = "0.2"
 
   [[metadata.dependencies]]
     id = "lifecycle"
-    sha256 = "fe37503098e964aa1a052abb50fecf2de3624c0049506e638c86dc5b4b7909e8"
-    source = "https://github.com/buildpack/lifecycle/releases/download/v0.5.0/lifecycle-v0.5.0%2Blinux.x86-64.tgz"
-    source_sha256 = "fe37503098e964aa1a052abb50fecf2de3624c0049506e638c86dc5b4b7909e8"
-    stacks = ["io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3", "org.cloudfoundry.stacks.tiny"]
-    uri = "https://buildpacks.cloudfoundry.org/dependencies/lifecycle/lifecycle-0.5.0-any-stack-fe375030.tgz"
-    version = "0.5.0"
+    sha256 = "5abc450423b9a13cf3e8f83623d30cd61081af293e85044a8d6d88e29548cc66"
+    source = "https://github.com/buildpacks/lifecycle/releases/download/v0.7.2/lifecycle-v0.7.2%2Blinux.x86-64.tgz"
+    source_sha256 = "5abc450423b9a13cf3e8f83623d30cd61081af293e85044a8d6d88e29548cc66"
+    stacks = ["io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3"]
+    uri = "https://buildpacks.cloudfoundry.org/dependencies/lifecycle/lifecycle-0.7.2-any-stack-5abc4504.tgz"
+    version = "0.7.2"
 
   [[metadata.dependencies]]
-    id = "org.cloudfoundry.httpd"
+    id = "paketo-buildpacks/httpd"
     sha256 = "bc45a39e03245deb9294da9f7ff9c1e884208da9a4afd79f7572c5e734610258"
     source = "https://github.com/cloudfoundry/httpd-cnb/archive/v0.0.107.tar.gz"
     source_sha256 = "9df0685f431533200a05d395ca6ac14bae21b03c942cc9084f43e736da19c114"
@@ -28,7 +28,7 @@ api = "0.2"
     version = "0.0.107"
 
   [[metadata.dependencies]]
-    id = "org.cloudfoundry.nginx"
+    id = "paketo-buildpacks/nginx"
     sha256 = "2d2a28a9c530b87c73d8939482153ac83c5633937bdad7429f2de40567199e95"
     source = "https://github.com/cloudfoundry/nginx-cnb/archive/v0.0.110.tar.gz"
     source_sha256 = "f847f54c204113fbf5dab7346c935dad86204c9f09cb880f14bc8a7b0febc7d2"
@@ -46,7 +46,7 @@ api = "0.2"
     version = "0.0.57"
 
   [[metadata.dependencies]]
-    id = "org.cloudfoundry.php-composer"
+    id = "paketo-buildpacks/php-composer"
     sha256 = "7c628602c098e03f058c004cdca3cf1466031289ef5c9a19f4b2156017015fcc"
     source = "https://github.com/cloudfoundry/php-composer-cnb/archive/v0.0.65.tar.gz"
     source_sha256 = "e3b7635cc20693635f37ef566f0b2abe0d818dad99c10f5cc39f7a83ebd3dc40"
@@ -55,7 +55,7 @@ api = "0.2"
     version = "0.0.65"
 
   [[metadata.dependencies]]
-    id = "org.cloudfoundry.php-dist"
+    id = "paketo-buildpacks/php-dist"
     sha256 = "083c4563d8acb9aaa5fb3ddfce3298f6c538c41be2eea5bc896a64960b9cdd56"
     source = "https://github.com/cloudfoundry/php-dist-cnb/archive/v0.0.135.tar.gz"
     source_sha256 = "3658cacaa630d90c6f1e5a9edf9ea7e09a16002a8b2d97d9e26a94cd7f42b9f5"
@@ -64,9 +64,11 @@ api = "0.2"
     version = "0.0.135"
 
   [[metadata.dependencies]]
-    id = "org.cloudfoundry.php-web"
+    id = "paketo-buildpacks/php-web"
     sha256 = "5c126c257c6c5cc955da20d5f4113f3aaf33883b309b0bb3412d7b4f627af103"
     source = "https://github.com/cloudfoundry/php-web-cnb/archive/v0.0.93.tar.gz"
+		#source = "file:///tmp/cnb-source/php-web-cnb.tar.gz"
+		#source_sha256 = "09124d49c2b992c18aa9939c2c45d2842c64a31b520ed049f94c56f8ab23c3db"
     source_sha256 = "365033abdba5c3c482fabfb92fe5717bd0f2dbc6b12c366371eecaf6182c4a9c"
     stacks = ["io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3"]
     uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.php-web/org.cloudfoundry.php-web_0.0.93_linux_noarch_any-stack_5c126c25.tgz"
@@ -75,17 +77,17 @@ api = "0.2"
 [[order]]
 
   [[order.group]]
-    id = "org.cloudfoundry.httpd"
+    id = "paketo-buildpacks/httpd"
     version = "0.0.107"
     optional = true
 
   [[order.group]]
-    id = "org.cloudfoundry.nginx"
+    id = "paketo-buildpacks/nginx"
     version = "0.0.110"
     optional = true
 
   [[order.group]]
-    id = "org.cloudfoundry.php-dist"
+    id = "paketo-buildpacks/php-dist"
     version = "0.0.135"
 
   [[order.group]]
@@ -94,10 +96,10 @@ api = "0.2"
     optional = true
 
   [[order.group]]
-    id = "org.cloudfoundry.php-composer"
+    id = "paketo-buildpacks/php-composer"
     version = "0.0.65"
     optional = true
 
   [[order.group]]
-    id = "org.cloudfoundry.php-web"
+    id = "paketo-buildpacks/php-web"
     version = "0.0.93"
