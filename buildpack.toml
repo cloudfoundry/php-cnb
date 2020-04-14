@@ -10,6 +10,15 @@ api = "0.2"
   include_files = ["buildpack.toml"]
 
   [[metadata.dependencies]]
+    id = "org.cloudfoundry.php-web"
+    sha256 = "8763272bf16a5ed49c13fdb2a8241cca8b8c167b67a1998842ff74ba1ec0ae89"
+    source = "https://github.com/cloudfoundry/php-web-cnb/archive/v0.0.94.tar.gz"
+    source_sha256 = "b9e1381a12ec96763670b7c17d3467ab214a9be42b1a4d20821b3d7c1cf00630"
+    stacks = ["io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3"]
+    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.php-web/org.cloudfoundry.php-web_0.0.94_linux_noarch_any-stack_8763272b.tgz"
+    version = "0.0.94"
+
+  [[metadata.dependencies]]
     id = "paketo-buildpacks/httpd"
     sha256 = "bc45a39e03245deb9294da9f7ff9c1e884208da9a4afd79f7572c5e734610258"
     source = "https://github.com/cloudfoundry/httpd-cnb/archive/v0.0.107.tar.gz"
