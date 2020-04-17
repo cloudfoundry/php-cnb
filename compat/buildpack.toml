@@ -29,12 +29,12 @@ api = "0.2"
 
   [[metadata.dependencies]]
     id = "org.cloudfoundry.php-web"
-    sha256 = "a440837ce069f80984bbad8631f7790f54072ada3118f71ac8c1c68dc310790a"
-    source = "https://github.com/cloudfoundry/php-web-cnb/archive/v0.0.97.tar.gz"
-    source_sha256 = "e11637dbe0bc69a5fc1259bff5dccfaa0e878c848c851046d1387b03331c63ee"
+    sha256 = "bcdc9741359dbad5aee8e07521c249f58c2a07dbe8304d61a7d4c05dde19c635"
+    source = "https://github.com/cloudfoundry/php-web-cnb/archive/v0.0.98.tar.gz"
+    source_sha256 = "3c119b25cc433036d22c8deabfe2dbb4ad3f735642da96ec0cde46a21746ef64"
     stacks = ["io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3"]
-    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.php-web/org.cloudfoundry.php-web_0.0.97_linux_noarch_any-stack_a440837c.tgz"
-    version = "0.0.97"
+    uri = "https://buildpacks.cloudfoundry.org/dependencies/org.cloudfoundry.php-web/org.cloudfoundry.php-web_0.0.98_linux_noarch_any-stack_bcdc9741.tgz"
+    version = "0.0.98"
 
   [[metadata.dependencies]]
     id = "paketo-buildpacks/httpd"
